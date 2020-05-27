@@ -27,9 +27,11 @@ while (count < 6) {
 
 const $btn = document.querySelector('.btn');
 const $div = document.createElement('div');
-const $section = document.querySelector('section')
 
-$div.textContent = 'lotto.join()'
-
-$section.appendChild($div);
+$btn.onclick = () => {
+  const $section = document.querySelector('section')
+  $div.textContent = 'lotto.join()'
+  $section.appendChild($div);
+  e.stopPropagation()
+}
 
