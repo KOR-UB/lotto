@@ -7,9 +7,21 @@ ul {
     list-style: none;
     padding-left: 0;
 }
+section
+{
+    min-height: 100vh;
+}
+.btn-group
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 button{
     margin: 30px 0;
-    width: 100px;
+    width: 200px;
+    line-height: 2em;
     height: 30px;
     color: #333;
     font-size: 15px;
@@ -18,6 +30,9 @@ button{
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 button::before{
     content: "";
@@ -32,12 +47,7 @@ button::before{
 }
 span{
     color: #11112b;
-    position: absolute;
-    top:0;
-    left:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 1000;
 }
 button:hover span{
     color: #fff;
@@ -49,4 +59,9 @@ footer {
     background-color: #11112b;
     color: #d3d3d3;
     padding: 30px 0;
+}
+.lotto {
+    font-size: 2.5em;
+    line-height: 30vh;
+    color: #272f4b;
 }
